@@ -11,6 +11,6 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author marti
  */
-public interface EstudianteDao extends CrudRepository<Estudiante, Long>  {
+public interface EstudianteDao extends CrudRepository <Estudiante, Long>  {
     
 }

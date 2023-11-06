@@ -31,9 +31,10 @@ public class StudentServiceImplement implements StudentService {
         return estudiantedao.save(Estudiante);
     }
 
+    
     @Override
     public Estudiante eliminar(Estudiante Estudiante) {
-        estudiantedao.delete(Estudiante);
+        estudiantedao.delete(Estudiante);//este metodo es void en la interface
       return Estudiante;
     }
 
