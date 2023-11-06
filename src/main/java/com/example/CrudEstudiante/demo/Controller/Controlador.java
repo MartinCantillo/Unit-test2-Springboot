@@ -58,7 +58,7 @@ public class Controlador {
     @GetMapping("/editar/{codigo}")
     public String Update(Estudiante Estudiante, Model Model) {
 
-        Estudiante = studentserviceimp.encontrarcliente(Estudiante);
+        Estudiante = studentserviceimp.encontrarEstudiante(Estudiante);
         Model.addAttribute("estudiante", Estudiante);
         return "modificar";
 

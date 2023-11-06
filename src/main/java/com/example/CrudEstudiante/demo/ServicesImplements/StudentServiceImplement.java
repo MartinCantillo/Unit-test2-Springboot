@@ -27,17 +27,18 @@ public class StudentServiceImplement implements StudentService {
     }
 
     @Override
-    public void guardar(Estudiante Estudiante) {
-        estudiantedao.save(Estudiante);
+    public Estudiante guardar(Estudiante Estudiante) {
+        return estudiantedao.save(Estudiante);
     }
 
     @Override
-    public void eliminar(Estudiante Estudiante) {
+    public Estudiante eliminar(Estudiante Estudiante) {
         estudiantedao.delete(Estudiante);
+      return Estudiante;
     }
 
     @Override
-    public Estudiante encontrarcliente(Estudiante Estudiante) {
+    public Estudiante encontrarEstudiante(Estudiante Estudiante) {
         return estudiantedao.findById(Estudiante.getCodigo()).orElse(null);
     }
 

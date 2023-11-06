@@ -15,9 +15,9 @@ public interface StudentService {
 
     public List<Estudiante> listarEstudiantes();
 
-    public void guardar(Estudiante Estudiante);
+    public Estudiante guardar(Estudiante Estudiante);
 
-    public void eliminar(Estudiante Estudiante);
+    public Estudiante eliminar(Estudiante Estudiante);
 
-    public Estudiante encontrarcliente(Estudiante Estudiante);
+    public Estudiante encontrarEstudiante(Estudiante Estudiante);
 }
